@@ -51,7 +51,8 @@ const App = () => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/expenses`);
       setExpenses(response.data);
-    } catch (error)      console.error('Error fetching expenses:', error);
+    } catch (error) {
+      console.error('Error fetching expenses:', error);
     }
   };
 
